@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Components as PCFComponents} from 'platform-common-frontend';
-import { MemoryRouter } from 'react-router';
+import Header from './components/common/header/header'
+import Footer from './components/common/footer/footer'
+import Main from './components/Main'
+import { BrowserRouter } from 'react-router-dom'
+
 class App extends Component {
+
   render() {
     return (
-      <MemoryRouter initialEntries={["/"]}>
-      <PCFComponents.GovUkAppWrapper>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">Welcome to React</h1>
-              </header>
-            </div>
-          </div>
+      <BrowserRouter>
+        <div className="App">
+                <Header />
+                <Main />
+                <Footer />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </PCFComponents.GovUkAppWrapper>
-      </MemoryRouter>
+      </BrowserRouter>
     );
   }
 }
