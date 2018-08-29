@@ -1,10 +1,8 @@
+@import "./assets/sass/reset.scss";
+@import "./assets/sass/variables.scss";
+@import "./assets/sass/base.scss";
+
 @import "govuk-elements";
 @import "~govuk_template_jinja/assets/stylesheets/govuk-template.css";
 @import "~govuk_template_jinja/assets/stylesheets/fonts.css";
 
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}

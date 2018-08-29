@@ -1,0 +1,15 @@
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.top-page {
+    background-color: $topPageBgColor;
+    color: $topPageBgTextColor;
+    min-height: 200px;
+    padding: 40px 80px 40px 80px;
+}

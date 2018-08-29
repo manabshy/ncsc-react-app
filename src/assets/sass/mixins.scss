@@ -1,0 +1,27 @@
+@mixin setFont($fontFamily, $fontWeight, $fontStyle, $fontSize, $lineHeight, $color) {
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $color;
+}
+
+@mixin setBorder($position, $width, $style, $color) {
+    @if $position == 'top' {
+        border-top: $width $style $color;
+    }
+    @if $position == 'bottom' {
+        border-bottom: $width $style $color;
+    }
+    @if $position == 'left' {
+        border-left: $width $style $color;
+    }
+    @if $position == 'right' {
+        border-right: $width $style $color;
+    }
+    @if $position == 'all' {
+        border: $width $style $color;
+    }
+}
+
